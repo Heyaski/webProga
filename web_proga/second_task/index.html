@@ -31,63 +31,65 @@
 		</nav>
 
 		<hr />
-		<aside>
-			<p>TIC is a consulting firm specializing in:</p>
-			<ul>
-				<li>GNU/Linux System Architecture</li>
-				<li>Unix System Architecture</li>
-				<li>TCP/IP Network Design</li>
-				<li>Network Security</li>
-				<li>Open Source Tool Development</li>
-			</ul>
-		</aside>
+		<main>
+			<aside>
+				<p>TIC is a consulting firm specializing in:</p>
+				<ul>
+					<li>GNU/Linux System Architecture</li>
+					<li>Unix System Architecture</li>
+					<li>TCP/IP Network Design</li>
+					<li>Network Security</li>
+					<li>Open Source Tool Development</li>
+				</ul>
+			</aside>
 
-		<article>This is article</article>
+			<article>This is article</article>
 
-		<!-- $Id: end.m4,v 1.4 2004/10/02 00:07:57 smoot Exp $ -->
+			<!-- $Id: end.m4,v 1.4 2004/10/02 00:07:57 smoot Exp $ -->
 
-		<!-- SiteSearch HtDig -->
-		<!-- $Id: htdig.m4,v 1.2 2004/10/02 00:07:58 smoot Exp $ -->
-		<section class="htdig">
-			<hr />
-			<form method="post" action="/cgi-bin/htsearch">
-				<p>
-					Search TIC:
-					<input type="text" size="30" name="words" value="" />
-					<input type="submit" value="Search" />
-				</p>
+			<!-- SiteSearch HtDig -->
+			<!-- $Id: htdig.m4,v 1.2 2004/10/02 00:07:58 smoot Exp $ -->
+			<section class="htdig">
+				<hr />
+				<form method="post" action="/cgi-bin/htsearch">
+					<p>
+						Search TIC:
+						<input type="text" size="30" name="words" value="" />
+						<input type="submit" value="Search" />
+					</p>
 
-				<p>
-					Match:
-					<select name="method">
-						<option value="and">All</option>
-						<option value="or">Any</option>
-						<option value="boolean">Boolean</option>
-					</select>
+					<p>
+						Match:
+						<select name="method">
+							<option value="and">All</option>
+							<option value="or">Any</option>
+							<option value="boolean">Boolean</option>
+						</select>
 
-					Format:
-					<select name="format">
-						<option value="builtin-long">Long</option>
-						<option value="builtin-short">Short</option>
-					</select>
+						Format:
+						<select name="format">
+							<option value="builtin-long">Long</option>
+							<option value="builtin-short">Short</option>
+						</select>
 
-					Sort by:
-					<select name="sort">
-						<option value="score">Score</option>
-						<option value="time">Time</option>
-						<option value="title">Title</option>
-						<option value="revscore">Reverse Score</option>
-						<option value="revtime">Reverse Time</option>
-						<option value="revtitle">Reverse Title</option>
-					</select>
+						Sort by:
+						<select name="sort">
+							<option value="score">Score</option>
+							<option value="time">Time</option>
+							<option value="title">Title</option>
+							<option value="revscore">Reverse Score</option>
+							<option value="revtime">Reverse Time</option>
+							<option value="revtitle">Reverse Title</option>
+						</select>
 
-					<input type="hidden" name="config" value="htdig" />
-					<input type="hidden" name="restrict" value="" />
-					<input type="hidden" name="exclude" value="" />
-				</p>
-			</form>
-			<hr />
-		</section>
+						<input type="hidden" name="config" value="htdig" />
+						<input type="hidden" name="restrict" value="" />
+						<input type="hidden" name="exclude" value="" />
+					</p>
+				</form>
+				<hr />
+			</section>
+		</main>
 
 		<footer>
 			<a href="https://www.apache.org">
