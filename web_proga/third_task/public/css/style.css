@@ -70,6 +70,11 @@ header:hover::after {
 	font-weight: 700;
 }
 
+.home {
+	color: #fff;
+	align-items: center;
+}
+
 nav a {
 	font-size: 1.15rem;
 	color: #fff;
@@ -97,16 +102,19 @@ main {
 }
 
 .left {
-	/*aside's block site*/
+	/*боковая колонка на странице*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 20%;
 	height: 90vh;
-
 	float: left;
 	background: rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(50px);
+}
+
+.text {
+	color: #fff;
 }
 
 .info {
@@ -157,7 +165,7 @@ main {
 }
 
 .about-author {
-	/*general block on about author's page*/
+	/*основной блок на странице об авторе*/
 	width: 70%;
 	height: 400px;
 	margin: 5rem 3rem;
@@ -184,7 +192,7 @@ main {
 }
 
 .contact-info {
-	/*general block on contact's page*/
+	/*основной блок на странице контакты*/
 	width: 40%;
 	height: 400px;
 	margin: 5rem 3rem;
@@ -210,7 +218,7 @@ main {
 }
 
 footer {
-	/*site's footer*/
+	/*футер сайта*/
 	position: absolute;
 	left: 0;
 	bottom: 0;
@@ -222,6 +230,8 @@ footer {
 	justify-content: center;
 	align-items: center;
 }
+
+/*Адаптивность сайта*/
 
 @media (max-width: 1492px) {
 	.container {
@@ -367,5 +377,47 @@ footer {
 	.contact-info {
 		width: 300px;
 		height: 200px;
+	}
+}
+
+@media (max-width: 367px) {
+	.about-author {
+		height: 65vh;
+	}
+}
+
+@media (max-width: 250px) {
+	.about-author h1 {
+		font-size: 15px;
+	}
+
+	.about-author {
+		height: 90vh;
+	}
+
+	.site-info h1 {
+		font-size: 15px;
+	}
+
+	.site-info {
+		font-size: 12px;
+	}
+
+	.about-page h1 {
+		font-size: 15px;
+	}
+
+	.about-page {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 187px) {
+	.about-author {
+		font-size: 10px;
+	}
+
+	.about-author h1 {
+		font-size: 13px;
 	}
 }
