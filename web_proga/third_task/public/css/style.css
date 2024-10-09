@@ -107,7 +107,7 @@ main {
 	justify-content: center;
 	align-items: center;
 	width: 20%;
-	height: 90vh;
+	height: 100vh;
 	float: left;
 	background: rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(50px);
@@ -233,7 +233,7 @@ footer {
 
 /*Адаптивность сайта*/
 
-@media (max-width: 1492px) {
+@media (max-width: 1493px) {
 	.container {
 		margin-top: 5rem;
 	}
@@ -265,6 +265,12 @@ footer {
 
 	.about-page {
 		height: 240px;
+	}
+}
+
+@media (max-width: 942px) {
+	.info p {
+		font-size: 13px;
 	}
 }
 
