@@ -70,9 +70,10 @@ header:hover::after {
 	font-weight: 700;
 }
 
-.home {
+.logo img {
 	color: #fff;
-	align-items: center;
+	position: relative;
+	top: 5px;
 }
 
 nav a {
@@ -266,6 +267,10 @@ footer {
 	.about-page {
 		height: 240px;
 	}
+
+	.contact-info {
+		width: 100%;
+	}
 }
 
 @media (max-width: 942px) {
@@ -364,18 +369,71 @@ footer {
 	}
 }
 
+@media (max-width: 527px) {
+	.container {
+		display: block;
+	}
+
+	.site-info {
+		margin-top: 13rem;
+		height: 25vh;
+		margin-left: 13vh;
+	}
+
+	.about-page {
+		margin-top: 10rem;
+		height: 26vh;
+		margin-left: 13vh;
+	}
+}
+
 @media (max-width: 517px) {
 	.about-page {
 		align-self: normal;
 		margin-top: 2rem;
-		height: 80vh;
+		height: 45vh;
 		width: 60%;
 	}
 
 	.site-info {
-		height: 70vh;
 		width: 60%;
 		margin-top: 2rem;
+	}
+}
+
+@media (max-width: 446px) {
+	.site-info {
+		margin-top: 10rem;
+		height: 30vh;
+	}
+
+	.about-page {
+		height: 40vh;
+	}
+
+	.about-author {
+		margin-top: 10rem;
+	}
+
+	.contact-info {
+		margin-top: 10rem;
+		width: 80%;
+		position: absolute;
+		top: 250;
+		left: 100;
+	}
+
+	footer {
+		position: relative;
+		left: 0;
+		bottom: -100;
+		width: 100%;
+		height: 5rem;
+		background: rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(30px);
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 }
 
@@ -383,13 +441,30 @@ footer {
 	.contact-info {
 		width: 300px;
 		height: 200px;
+		margin-top: 15rem;
+	}
+
+	.about-author {
+		margin-top: 10rem;
 	}
 
 	.about-page p {
 		font-size: 12px;
 	}
 
+	.site-info {
+		margin-top: 10rem;
+		height: 50vh;
+	}
+
+	.about-page {
+		margin-top: 6rem;
+	}
+
 	footer {
+		position: relative;
+		bottom: -10;
+		margin-top: 10rem;
 		font-size: 12px;
 	}
 }
@@ -433,5 +508,76 @@ footer {
 
 	.about-author h1 {
 		font-size: 13px;
+	}
+}
+
+@media (max-height: 430px) {
+	footer {
+		position: relative;
+		top: 0px;
+	}
+
+	.left {
+		height: 110vh;
+		margin-top: 5.57rem;
+	}
+
+	.about-page {
+		position: relative;
+		top: 90px;
+	}
+}
+
+@media (max-height: 414px) {
+	footer {
+		position: relative;
+		left: 0;
+		bottom: -10;
+		width: 100%;
+		height: 5rem;
+		background: rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(30px);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.left {
+		height: 110vh;
+		margin-top: 5.57rem;
+	}
+
+	.about-page {
+		position: relative;
+		top: 105px;
+	}
+
+	.container {
+		margin-top: 3rem;
+	}
+}
+
+@media (max-height: 375px) {
+	.site-info {
+		margin-top: 0;
+		height: 62vh;
+	}
+
+	.about-page {
+		margin-top: 0;
+		height: 69vh;
+	}
+
+	.about-author {
+		margin-top: 0;
+	}
+
+	.contact-info {
+		width: 100%;
+		margin-left: 10rem;
+	}
+
+	footer {
+		margin-top: 5rem;
 	}
 }
